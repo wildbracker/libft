@@ -6,7 +6,7 @@
 /*   By: amalaini <amalaini@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 14:18:17 by amalaini          #+#    #+#             */
-/*   Updated: 2026/11/03 19:13:08 by amalaini         ###   ########.fr       */
+/*   Updated: 2026/11/07 15:46:18 by amalaini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
-	if (s1 && s2) 
+	if (s1 && s2)
 		res = ft_calloc(sizeof(char), ft_strlen(s1) + ft_strlen(s2) + 1);
 	else
 		return (NULL);

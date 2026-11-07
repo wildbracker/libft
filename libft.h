@@ -6,7 +6,7 @@
 /*   By: amalaini <amalaini@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 14:30:45 by amalaini          #+#    #+#             */
-/*   Updated: 2026/11/02 14:30:46 by amalaini         ###   ########.fr       */
+/*   Updated: 2026/11/07 15:44:03 by amalaini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *s, int c, size_t n);
 char				*ft_strchr(const char *s, int c);
+char				*ft_strrchr(const char *s, int c);
 char				*ft_strdup(const char *s);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);

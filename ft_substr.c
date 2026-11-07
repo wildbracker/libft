@@ -6,7 +6,7 @@
 /*   By: amalaini <amalaini@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 12:04:04 by amalaini          #+#    #+#             */
-/*   Updated: 2026/11/03 15:53:13 by amalaini         ###   ########.fr       */
+/*   Updated: 2026/11/07 15:44:15 by amalaini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	if (start > ft_strlen(s))
 		return (ft_strdup(""));
 	str = ft_calloc(sizeof(char), min(len, ft_strlen(s) - start) + 1);

@@ -6,7 +6,7 @@
 /*   By: amalaini <amalaini@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 10:13:50 by amalaini          #+#    #+#             */
-/*   Updated: 2026/11/03 15:43:30 by amalaini         ###   ########.fr       */
+/*   Updated: 2026/11/07 15:47:05 by amalaini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*d;
 	unsigned char	*s;
 

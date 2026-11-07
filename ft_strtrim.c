@@ -17,10 +17,15 @@ char	*ft_strtrim(const char *s, const char *set)
 	size_t	start;
 	size_t	end;
 
-	if (!s)
-		return (ft_strdup(""));
-	if (!set)
-		return (ft_strdup(s));
+	if (s || set)
+	{
+		if (!s)
+			return (ft_strdup(""));
+		if (!set)
+			return (ft_strdup(s));
+	}
+	else
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s);
 	while (s[start] && ft_strchr(set, s[start]))
