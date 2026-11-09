@@ -6,7 +6,7 @@
 /*   By: amalaini <amalaini@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 16:08:48 by amalaini          #+#    #+#             */
-/*   Updated: 2026/11/02 14:39:05 by amalaini         ###   ########.fr       */
+/*   Updated: 2026/11/08 16:37:21 by amalaini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	t_list	*node;
 
 	node = lst;
-	while (node)
+	while (node && f)
 	{
 		f(node->content);
 		node = node->next;
